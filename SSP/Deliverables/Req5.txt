@@ -1,0 +1,23 @@
+﻿5. Implement neighborhood search for the SSP and run it on all 4 integer arrays to obtain solutions
+SNS-8, SNS-10, SNS-50 and SNS-100 respectively. Compare SNS-8 with SB-8 and SNS-10 with SB-10.
+
+Steps for NS:
+    //1. Generate a random solution for the problem and call it S
+    //2. Compute the neighborhood of S and choose S' as the best solution in the neighborhood
+    //3. If S' is better than S then go to step 4, else go to step 6
+    //4. S = S'
+    //5. Go to step 2
+    //6. Return S as the best solution encountered
+
+For a good NS Algo the initial solution must be provided wisely.
+
+I generated Neighborhoods by adding or substracting a single element from the best solution at the time.
+In my current implementation the NS Algo starts from a randomly generated solution so the comparison between results is not relevant.
+Most of the times the NS Algo gets to a much worse result because of the 2 ways of generating the neighborhoods and most importantly the random starting solution.
+Backtracking always gets the right solution for each run and is consistent.
+
+SNS-8: 
+SB-8: -474, 290, -81, 261 having the sum of 4
+
+SNS-10:
+SB-10: 140, 192, -478, 192, -44 having the sum of 2

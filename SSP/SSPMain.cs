@@ -21,9 +21,9 @@ namespace SSP
             Console.WriteLine(" *** Backtracking solution *** ");
             var backtrackingCalculator = new SSBacktrackingCalculator();
 
-            //Console.WriteLine("\n IA8 set ");
-            //MeasureResult measureResultforIA8 = Measurement.Exec(backtrackingCalculator.Calculate, Dataset.IA8);
-            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            Console.WriteLine("\n IA8 set ");
+            MeasureResult measureResultforIA8 = Measurement.Exec(backtrackingCalculator.Calculate, Dataset.IA8);
+            Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
 
             Console.WriteLine("\n IA10 set ");
             MeasureResult measureResultforIA10 = Measurement.Exec(backtrackingCalculator.Calculate, Dataset.IA10);
@@ -49,17 +49,17 @@ namespace SSP
             MeasureResult measureResultforIA8 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA8);
             Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
 
-            Console.WriteLine("\n IA10 set ");
-            MeasureResult measureResultforIA10 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA10);
-            Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine("\n IA10 set ");
+            //MeasureResult measureResultforIA10 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA10);
+            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
 
-            Console.WriteLine("\n IA50 set ");
-            MeasureResult measureResultforIA50 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA50);
-            Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine("\n IA50 set ");
+            //MeasureResult measureResultforIA50 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA50);
+            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
 
-            Console.WriteLine("\n IA100 set ");
-            MeasureResult measureResultforIA100 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA100);
-            Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine("\n IA100 set ");
+            //MeasureResult measureResultforIA100 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA100);
+            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
         }
     }
 }
