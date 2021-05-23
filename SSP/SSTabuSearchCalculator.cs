@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Combinatorics.Collections;
+using ExecutionTimeMeasurement;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Combinatorics.Collections;
-using ExecutionTimeMeasurement;
 
 namespace SSP
 {
-    public class SSBacktrackingCalculator : ISSCalculator
+    public class SSTabuSearchCalculator : ISSCalculator
     {
         [Measure(nameof(Calculate), "Calculate method", 1)]
         public void Calculate(List<int> dataset)
@@ -19,18 +19,10 @@ namespace SSP
             foreach (var numberOfCombinationsItemToTake in listOfNumbersOfCombinations)
             {
                 //combinations = subset of the original set containing only a number of 'numberOfCombinationsItemToTake' items
-                foreach (var combinationsList in new Combinations<int>(dataset, numberOfCombinationsItemToTake)) 
+                foreach (var combinationsList in new Combinations<int>(dataset, numberOfCombinationsItemToTake))
                 {
                     var currentSum = Math.Abs(combinationsList.Sum());
-                    //if (currentSum == 0)
-                    //{
-                    //    Console.WriteLine("Found the first perfect solution. Stopping!\n");
-                    //    PrintSolution(combinationsList, currentSum);
-                    //    return;
-                    //}
-                    //Print the intermediary results
-                    //Console.WriteLine($"[Minimum sum so far is: {minimumSum}");
-                    //PrintSolution(combinationsList, currentSum);
+
                     if (currentSum < minimumSum)
                     {
                         minimumSum = currentSum;

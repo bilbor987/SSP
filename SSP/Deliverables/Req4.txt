@@ -1,0 +1,13 @@
+﻿4. Use a timer to measure the time TB-8 required to obtain SB-8 and the time TB-10 required to obtain
+SB-10. Compute TB-10/TB-8 as opposed to 10/8 = 1.25 and find an explanation. Draw the necessary
+conclusion about the feasibility of backtracking on larger integer arrays.
+
+TB-8 = 24.89596 ms
+TB-10 = 28.087799999999998 ms
+
+TB-10/TB-8 = 1.1282071468623824 ms
+
+TB-8 is approximately 1.12 times faster so not that great on my machine. 
+These calculations were performed several times for error minimizations and I used the average times.
+
+On big sets of data Backtracking is not a viable option in terms of computation time BUT it will provide the best solution there is.

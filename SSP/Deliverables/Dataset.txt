@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SSP
-{
-    public class Dataset
-    {
-        public static List<int> test = new List<int>() { -7, -3, -2, 5, 8, 3, 2, -1, 10 };
-        public static List<int> IA8 = new List<int>() { -474, 437, -107, 22, 290, 234, -81, 261 };
+public static List<int> IA8 = new List<int>() { -474, 437, -107, 22, 290, 234, -81, 261 };
 
         public static List<int> IA10 = new List<int>() { 140, 192, -303, -84, -478, -281, 351, 192, -175, -44 };
 
@@ -33,5 +24,3 @@ namespace SSP
             276, -301,   30,  -23,  379,   18,  351, -170, -61, 48,
             -10,  284, -408, -284,  -66,  180, -118,  296, -285, 236
         };
-    }
-}
