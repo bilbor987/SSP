@@ -8,9 +8,9 @@ namespace SSP
 
         static void Main(string[] args)
         {
-            Backtracking();
+            //Backtracking();
 
-            //NeighborhoodSearch();
+            NeighborhoodSearch();
 
             //TabuSearch();
 
@@ -45,21 +45,21 @@ namespace SSP
             Console.WriteLine(" *** Neighborhood search solution *** ");
             var neighborhoodCalculator = new SSNeighborhoodSearchCalculator();
 
-            Console.WriteLine("\n IA8 set ");
-            MeasureResult measureResultforIA8 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA8);
-            Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine("\n IA8 set ");
+            //MeasureResult measureResultforIA8 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA8);
+            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
 
             //Console.WriteLine("\n IA10 set ");
             //MeasureResult measureResultforIA10 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA10);
-            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine($"\t{measureResultforIA10.CalculateAverage().TotalMilliseconds} miliseconds");
 
             //Console.WriteLine("\n IA50 set ");
             //MeasureResult measureResultforIA50 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA50);
-            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            //Console.WriteLine($"\t{measureResultforIA50.CalculateAverage().TotalMilliseconds} miliseconds");
 
-            //Console.WriteLine("\n IA100 set ");
-            //MeasureResult measureResultforIA100 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA100);
-            //Console.WriteLine($"\t{measureResultforIA8.CalculateAverage().TotalMilliseconds} miliseconds");
+            Console.WriteLine("\n IA100 set ");
+            MeasureResult measureResultforIA100 = Measurement.Exec(neighborhoodCalculator.Calculate, Dataset.IA100);
+            Console.WriteLine($"\t{measureResultforIA100.CalculateAverage().TotalMilliseconds} miliseconds");
         }
     }
 }

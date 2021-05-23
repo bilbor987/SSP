@@ -1,0 +1,9 @@
+﻿6. Use a timer to measure the time TNS-8 required to obtain SNS-8 and the time TNS-10 required to obtain
+SNS-10. Compare TNS-10/TNS-8 or alternatively, TB-8/TNS-8 and TB-10/TNS-10. Draw the necessary
+conclusion about the feasibility of neighborhood search on larger integer arrays. Also measure the
+time TNS-50 required to obtain SNS-50 and the time TNS-100 required to obtain SNS-100.
+
+TNS-8:	 arround 20ms
+TNS-10:	 arround 19ms
+TNS-50:	 arround 28ms
+TNS-100: arround 20ms

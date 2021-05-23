@@ -26,25 +26,25 @@ namespace SSP
                 PrintIntegerList(startingSolution);
                 return;
             }
-            Console.WriteLine("Initial random solution: ");
-            PrintIntegerList(startingSolution);
+            //Console.WriteLine("Initial random solution: ");
+            //PrintIntegerList(startingSolution);
             Search(dataset, startingSolution, startingSum);
         }
 
         private void Search(List<int> dataset, List<int> startingSolution, int startingSum)
         {
             var neighborhoods = GenerateNeighborhoods(dataset, startingSolution);
-            Console.WriteLine("\nNeighborhoods: ");
-            PrintIntegerListOfLists(neighborhoods);
+            //Console.WriteLine("\nNeighborhoods: ");
+            //PrintIntegerListOfLists(neighborhoods);
 
             List<int> bestSolution = GetBestSolutionFromNeighborhood(neighborhoods);
             int bestSum = bestSolution.Sum();
-            Console.WriteLine("\nBest solution: ");
-            PrintSolution(bestSolution, bestSum);
+            //Console.WriteLine("\nBest solution: ");
+            //PrintSolution(bestSolution, bestSum);
 
             if (Math.Abs(bestSum) < Math.Abs(startingSum))
             {
-                Console.WriteLine("Current sum is better than the starting sum. \nGoing further.\n");
+                //Console.WriteLine("Current sum is better than the starting sum. \nGoing further.\n");
                 Search(dataset, bestSolution, bestSum);
             }
             else
@@ -59,8 +59,8 @@ namespace SSP
             // get the elements from the dataset that are not in the solution
             var intersection = dataset.Except(solutionSoFar).ToList();
 
-            Console.WriteLine("\nIntersection: ");
-            PrintIntegerList(intersection);
+            //Console.WriteLine("\nIntersection: ");
+            //PrintIntegerList(intersection);
 
             List<int> neighborhood = new List<int>(solutionSoFar);
             // generate neighborhoods by adding one element more

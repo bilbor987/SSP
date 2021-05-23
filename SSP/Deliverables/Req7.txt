@@ -1,0 +1,4 @@
+﻿Conclusions 
+For IA-8 and IA-10 the times are comparable, the only difference is that the Backtracking solution always delivers the right result.
+For IA-50 and IA-100 the backtracking option is not really an option anymore since it takes a lot of time to compute results wheareas 
+	the NS Algo is fast and pretty accurate most of the times by giving only an approximate solution which is the local minimum of the initial solution.
