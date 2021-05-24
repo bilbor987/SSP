@@ -100,6 +100,7 @@ namespace SSP
                     if (currentSum < bestSum)
                     {
                         bestSolution = currentNeighborhood;
+                        bestSum = currentSum;
                     }
                 }
             }
