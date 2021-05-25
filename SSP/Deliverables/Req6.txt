@@ -7,3 +7,10 @@ TNS-8:	 arround 20ms
 TNS-10:	 arround 19ms
 TNS-50:	 arround 28ms
 TNS-100: arround 20ms
+
+TB-8 = 24.89596 ms
+TB-10 = 28.087799999999998 ms
+
+TB-10/TB-8 = 1.1282071468623824 ms
+
+feasibility: NS is feasible on large integer arrays wheareas BT is not.
